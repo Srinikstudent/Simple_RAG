@@ -1,0 +1,90 @@
+{"level":"info","message":"BEGIN: GET /api/app:getLang?locale=en-US","reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","timestamp":"2023-05-25T16:23:59.562Z"}
+{"level":"info","message":"BEGIN: GET /api/app:getPlugins","reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","timestamp":"2023-05-25T16:23:59.594Z"}
+{"level":"info","message":"Current user id: 1","reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","timestamp":"2023-05-25T16:23:59.614Z"}
+{"level":"info","message":"Current user id: 1","reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","timestamp":"2023-05-25T16:23:59.619Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","skip":true,"timestamp":"2023-05-25T16:23:59.648Z"}
+{"level":"info","message":"acl params","reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","timestamp":"2023-05-25T16:23:59.651Z"}
+{"level":"info","message":"acl parsedParams","reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","timestamp":"2023-05-25T16:23:59.653Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","skip":true,"timestamp":"2023-05-25T16:23:59.663Z"}
+{"level":"info","message":"acl params","reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","timestamp":"2023-05-25T16:23:59.667Z"}
+{"level":"info","message":"acl parsedParams","reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","timestamp":"2023-05-25T16:23:59.670Z"}
+{"level":"info","message":"END: GET /api/app:getPlugins","req":{"action":{"actionName":"getPlugins","params":{"actionName":"getPlugins","resourceName":"app"},"resourceName":"app"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"8d71b933-42e9-49af-bb39-c6efb3c35435","res":{"status":200},"responseTime":1131,"timestamp":"2023-05-25T16:24:00.726Z"}
+{"level":"info","message":"END: GET /api/app:getLang?locale=en-US","req":{"action":{"actionName":"getLang","params":{"actionName":"getLang","locale":"en-US","resourceName":"app"},"resourceName":"app"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"385e939b-e3b3-4c8a-bf1c-f40c446eb507","res":{"status":200},"responseTime":12075,"timestamp":"2023-05-25T16:24:11.635Z"}
+{"level":"info","message":"BEGIN: GET /api/app:getLang?locale=en-US","reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","timestamp":"2023-05-25T16:24:11.673Z"}
+{"level":"info","message":"Current user id: 1","reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","timestamp":"2023-05-25T16:24:11.730Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","skip":true,"timestamp":"2023-05-25T16:24:11.745Z"}
+{"level":"info","message":"acl params","reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","timestamp":"2023-05-25T16:24:11.746Z"}
+{"level":"info","message":"acl parsedParams","reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","timestamp":"2023-05-25T16:24:11.747Z"}
+{"level":"info","message":"END: GET /api/app:getLang?locale=en-US","req":{"action":{"actionName":"getLang","params":{"actionName":"getLang","locale":"en-US","resourceName":"app"},"resourceName":"app"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"324b3507-a508-4fe5-a200-a42ce6f20b1a","res":{"status":200},"responseTime":85,"timestamp":"2023-05-25T16:24:11.758Z"}
+{"level":"info","message":"BEGIN: GET /api/uiRoutes:getAccessible","reqId":"265e264d-11cf-4a72-8409-64f862d62d83","timestamp":"2023-05-25T16:24:12.097Z"}
+{"level":"info","message":"Current user id: 1","reqId":"265e264d-11cf-4a72-8409-64f862d62d83","timestamp":"2023-05-25T16:24:12.112Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"265e264d-11cf-4a72-8409-64f862d62d83","skip":true,"timestamp":"2023-05-25T16:24:12.126Z"}
+{"level":"info","message":"acl params","reqId":"265e264d-11cf-4a72-8409-64f862d62d83","timestamp":"2023-05-25T16:24:12.127Z"}
+{"level":"info","message":"acl parsedParams","reqId":"265e264d-11cf-4a72-8409-64f862d62d83","timestamp":"2023-05-25T16:24:12.128Z"}
+{"level":"info","message":"END: GET /api/uiRoutes:getAccessible","req":{"action":{"actionName":"getAccessible","params":{"actionName":"getAccessible","resourceName":"uiRoutes"},"resourceName":"uiRoutes"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"265e264d-11cf-4a72-8409-64f862d62d83","res":{"status":200},"responseTime":40,"timestamp":"2023-05-25T16:24:12.137Z"}
+{"level":"info","message":"BEGIN: GET /api/systemSettings:get/1?appends=logo","reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","timestamp":"2023-05-25T16:24:12.349Z"}
+{"level":"info","message":"Current user id: 1","reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","timestamp":"2023-05-25T16:24:12.366Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","skip":true,"timestamp":"2023-05-25T16:24:12.376Z"}
+{"level":"info","message":"acl params","reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","timestamp":"2023-05-25T16:24:12.377Z"}
+{"level":"info","message":"acl parsedParams","reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","timestamp":"2023-05-25T16:24:12.378Z"}
+{"level":"info","message":"END: GET /api/systemSettings:get/1?appends=logo","req":{"action":{"actionName":"get","params":{"actionName":"get","appends":["logo"],"filterByTk":"1","resourceIndex":"1","resourceName":"systemSettings"},"resourceName":"systemSettings"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"46aa9c35-0a1e-4b88-9772-09abb33fb8ad","res":{"status":200},"responseTime":63,"timestamp":"2023-05-25T16:24:12.413Z"}
+{"level":"info","message":"BEGIN: GET /api/app:getInfo","reqId":"925d15a3-86ac-4fea-855f-71152086f213","timestamp":"2023-05-25T16:24:12.509Z"}
+{"level":"info","message":"Current user id: 1","reqId":"925d15a3-86ac-4fea-855f-71152086f213","timestamp":"2023-05-25T16:24:12.525Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"925d15a3-86ac-4fea-855f-71152086f213","skip":true,"timestamp":"2023-05-25T16:24:12.536Z"}
+{"level":"info","message":"acl params","reqId":"925d15a3-86ac-4fea-855f-71152086f213","timestamp":"2023-05-25T16:24:12.537Z"}
+{"level":"info","message":"acl parsedParams","reqId":"925d15a3-86ac-4fea-855f-71152086f213","timestamp":"2023-05-25T16:24:12.538Z"}
+{"level":"info","message":"END: GET /api/app:getInfo","req":{"action":{"actionName":"getInfo","params":{"actionName":"getInfo","resourceName":"app"},"resourceName":"app"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"925d15a3-86ac-4fea-855f-71152086f213","res":{"status":200},"responseTime":40,"timestamp":"2023-05-25T16:24:12.549Z"}
+{"level":"info","message":"BEGIN: POST /api/chartsQueries:listMetadata?paginate=false&sort%5B%5D=-id","reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","timestamp":"2023-05-25T16:24:12.828Z"}
+{"level":"info","message":"Current user id: 1","reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","timestamp":"2023-05-25T16:24:12.896Z"}
+{"can":{"action":"listMetadata","resource":"chartsQueries","role":"root"},"level":"info","message":"ctx permission","reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","skip":true,"timestamp":"2023-05-25T16:24:12.912Z"}
+{"level":"info","message":"acl params","reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","timestamp":"2023-05-25T16:24:12.918Z"}
+{"level":"info","message":"acl parsedParams","reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","timestamp":"2023-05-25T16:24:12.919Z"}
+{"level":"info","message":"END: POST /api/chartsQueries:listMetadata?paginate=false&sort%5B%5D=-id","req":{"action":{"actionName":"listMetadata","params":{"actionName":"listMetadata","paginate":"false","resourceName":"chartsQueries","sort":["-id"]},"resourceName":"chartsQueries"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"5f13b4c1-c269-40f5-ba3e-e9294f7fed4b","res":{"status":200},"responseTime":96,"timestamp":"2023-05-25T16:24:12.924Z"}
+{"level":"info","message":"BEGIN: GET /api/app:getInfo","reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","timestamp":"2023-05-25T16:24:13.244Z"}
+{"level":"info","message":"Current user id: 1","reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","timestamp":"2023-05-25T16:24:13.256Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","skip":true,"timestamp":"2023-05-25T16:24:13.265Z"}
+{"level":"info","message":"acl params","reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","timestamp":"2023-05-25T16:24:13.266Z"}
+{"level":"info","message":"acl parsedParams","reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","timestamp":"2023-05-25T16:24:13.267Z"}
+{"level":"info","message":"END: GET /api/app:getInfo","req":{"action":{"actionName":"getInfo","params":{"actionName":"getInfo","resourceName":"app"},"resourceName":"app"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"40457bc9-3e32-4443-98bb-0699d21ab16a","res":{"status":200},"responseTime":32,"timestamp":"2023-05-25T16:24:13.276Z"}
+{"level":"info","message":"BEGIN: GET /api/users:check","reqId":"30955a25-926e-4085-a729-71f7798a8d71","timestamp":"2023-05-25T16:24:13.508Z"}
+{"level":"info","message":"Current user id: 1","reqId":"30955a25-926e-4085-a729-71f7798a8d71","timestamp":"2023-05-25T16:24:13.525Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"30955a25-926e-4085-a729-71f7798a8d71","skip":true,"timestamp":"2023-05-25T16:24:13.535Z"}
+{"level":"info","message":"acl params","reqId":"30955a25-926e-4085-a729-71f7798a8d71","timestamp":"2023-05-25T16:24:13.536Z"}
+{"level":"info","message":"acl parsedParams","reqId":"30955a25-926e-4085-a729-71f7798a8d71","timestamp":"2023-05-25T16:24:13.536Z"}
+{"level":"info","message":"END: GET /api/users:check","req":{"action":{"actionName":"check","params":{"actionName":"check","resourceName":"users"},"resourceName":"users"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"30955a25-926e-4085-a729-71f7798a8d71","res":{"status":200},"responseTime":31,"timestamp":"2023-05-25T16:24:13.539Z"}
+{"level":"info","message":"BEGIN: GET /api/uiSchemaTemplates:list?appends%5B%5D=collection&paginate=false","reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","timestamp":"2023-05-25T16:24:13.604Z"}
+{"level":"info","message":"Current user id: 1","reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","timestamp":"2023-05-25T16:24:13.614Z"}
+{"can":{"action":"list","resource":"uiSchemaTemplates","role":"root"},"level":"info","message":"ctx permission","reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","skip":true,"timestamp":"2023-05-25T16:24:13.624Z"}
+{"level":"info","message":"acl params","reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","timestamp":"2023-05-25T16:24:13.625Z"}
+{"level":"info","message":"acl parsedParams","reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","timestamp":"2023-05-25T16:24:13.625Z"}
+{"level":"info","message":"END: GET /api/uiSchemaTemplates:list?appends%5B%5D=collection&paginate=false","req":{"action":{"actionName":"list","params":{"actionName":"list","appends":["collection"],"paginate":"false","resourceName":"uiSchemaTemplates"},"resourceName":"uiSchemaTemplates"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"8af500ca-4564-4bf4-8db1-50bcb56cfcfa","res":{"status":200},"responseTime":49,"timestamp":"2023-05-25T16:24:13.653Z"}
+{"level":"info","message":"BEGIN: GET /api/collections:list?paginate=false&appends%5B%5D=fields&appends%5B%5D=category&sort%5B%5D=sort&filter=%7B%7D","reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","timestamp":"2023-05-25T16:24:13.868Z"}
+{"level":"info","message":"Current user id: 1","reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","timestamp":"2023-05-25T16:24:13.883Z"}
+{"can":{"action":"list","resource":"collections","role":"root"},"level":"info","message":"ctx permission","reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","skip":true,"timestamp":"2023-05-25T16:24:13.890Z"}
+{"level":"info","message":"acl params","reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","timestamp":"2023-05-25T16:24:13.892Z"}
+{"level":"info","message":"acl parsedParams","reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","timestamp":"2023-05-25T16:24:13.893Z"}
+{"level":"info","message":"END: GET /api/collections:list?paginate=false&appends%5B%5D=fields&appends%5B%5D=category&sort%5B%5D=sort&filter=%7B%7D","req":{"action":{"actionName":"list","params":{"actionName":"list","appends":["fields","category"],"filter":{},"paginate":"false","resourceName":"collections","sort":["sort"]},"resourceName":"collections"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"b707ddd9-0a1f-4702-ad19-8027bb5d6846","res":{"status":200},"responseTime":76,"timestamp":"2023-05-25T16:24:13.944Z"}
+{"level":"info","message":"BEGIN: GET /api/collectionCategories:list?paginate=false&sort%5B%5D=sort","reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","timestamp":"2023-05-25T16:24:13.970Z"}
+{"level":"info","message":"BEGIN: GET /api/roles:check","reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","timestamp":"2023-05-25T16:24:13.976Z"}
+{"level":"info","message":"Current user id: 1","reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","timestamp":"2023-05-25T16:24:13.994Z"}
+{"level":"info","message":"Current user id: 1","reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","timestamp":"2023-05-25T16:24:13.997Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","skip":true,"timestamp":"2023-05-25T16:24:14.006Z"}
+{"level":"info","message":"acl params","reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","timestamp":"2023-05-25T16:24:14.007Z"}
+{"level":"info","message":"acl parsedParams","reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","timestamp":"2023-05-25T16:24:14.008Z"}
+{"can":{"action":"check","resource":"roles","role":"root"},"level":"info","message":"ctx permission","reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","skip":true,"timestamp":"2023-05-25T16:24:14.014Z"}
+{"level":"info","message":"acl params","reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","timestamp":"2023-05-25T16:24:14.016Z"}
+{"level":"info","message":"acl parsedParams","reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","timestamp":"2023-05-25T16:24:14.016Z"}
+{"level":"info","message":"END: GET /api/collectionCategories:list?paginate=false&sort%5B%5D=sort","req":{"action":{"actionName":"list","params":{"actionName":"list","paginate":"false","resourceName":"collectionCategories","sort":["sort"]},"resourceName":"collectionCategories"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"2fb389d2-01d1-4233-a3b5-b6163fc70f7c","res":{"status":200},"responseTime":59,"timestamp":"2023-05-25T16:24:14.029Z"}
+{"level":"info","message":"END: GET /api/roles:check","req":{"action":{"actionName":"check","params":{"actionName":"check","resourceName":"roles"},"resourceName":"roles"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"d1c035c6-588c-4d7f-b692-c3435d609cdc","res":{"status":200},"responseTime":61,"timestamp":"2023-05-25T16:24:14.037Z"}
+{"level":"info","message":"BEGIN: GET /api/uiSchemas:getJsonSchema/x4gw3mbp2pc","reqId":"45956181-b008-417c-99a3-db6c7eec9b21","timestamp":"2023-05-25T16:24:14.387Z"}
+{"level":"info","message":"Current user id: 1","reqId":"45956181-b008-417c-99a3-db6c7eec9b21","timestamp":"2023-05-25T16:24:14.397Z"}
+{"can":null,"level":"info","message":"ctx permission","reqId":"45956181-b008-417c-99a3-db6c7eec9b21","skip":true,"timestamp":"2023-05-25T16:24:14.407Z"}
+{"level":"info","message":"acl params","reqId":"45956181-b008-417c-99a3-db6c7eec9b21","timestamp":"2023-05-25T16:24:14.408Z"}
+{"level":"info","message":"acl parsedParams","reqId":"45956181-b008-417c-99a3-db6c7eec9b21","timestamp":"2023-05-25T16:24:14.409Z"}
+{"level":"info","message":"END: GET /api/uiSchemas:getJsonSchema/x4gw3mbp2pc","req":{"action":{"actionName":"getJsonSchema","params":{"actionName":"getJsonSchema","filterByTk":"x4gw3mbp2pc","resourceIndex":"x4gw3mbp2pc","resourceName":"uiSchemas"},"resourceName":"uiSchemas"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"45956181-b008-417c-99a3-db6c7eec9b21","res":{"status":200},"responseTime":47,"timestamp":"2023-05-25T16:24:14.434Z"}
+{"level":"info","message":"BEGIN: GET /api/uiSchemas:getProperties/x1meclgs8hv","reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","timestamp":"2023-05-25T16:24:14.647Z"}
+{"level":"info","message":"Current user id: 1","reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","timestamp":"2023-05-25T16:24:14.658Z"}
+{"can":{"action":"getProperties","resource":"uiSchemas","role":"root"},"level":"info","message":"ctx permission","reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","skip":true,"timestamp":"2023-05-25T16:24:14.670Z"}
+{"level":"info","message":"acl params","reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","timestamp":"2023-05-25T16:24:14.671Z"}
+{"level":"info","message":"acl parsedParams","reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","timestamp":"2023-05-25T16:24:14.672Z"}
+{"level":"info","message":"END: GET /api/uiSchemas:getProperties/x1meclgs8hv","req":{"action":{"actionName":"getProperties","params":{"actionName":"getProperties","filterByTk":"x1meclgs8hv","resourceIndex":"x1meclgs8hv","resourceName":"uiSchemas"},"resourceName":"uiSchemas"},"header":{"x-hostname":"localhost","x-locale":"en-US","x-role":"root","x-timezone":"+5.5:00"}},"reqId":"9bc9b5e7-533d-480c-a649-252702ca61f0","res":{"status":200},"responseTime":62,"timestamp":"2023-05-25T16:24:14.709Z"}
