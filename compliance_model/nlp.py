@@ -1,82 +1,105 @@
 import spacy
 
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load('en_core_web_sm')
 
 def extract_rules(text):
     doc = nlp(text)
 
     str = ""
+    name = ""
+    is_person = False
     amount = None
-    for token in doc:
-        if token.ent_type_ == "MONEY":
+    
+    for token in doc.ents:
+        print(token.text)
+        
+        if token.label_ == "PERSON":
+            name = token.text
+            is_person = True
+            
+        if token.label_ == "ORG":
+            name = token.text
+        
+        if token.label_ == "MONEY":
             amount = float(token.text.replace(",", ""))
             break
+        
+        
+    for token in doc:
+        
         if token.text.upper() == "RECURRING":
             str = "RECURRING"
             break
+        
         if token.text.upper() == "TRADER":
             str = "TRADER"
             break
+        
         if token.text.upper() == "TRUST":
             str = "TRUST"
             break
+        
         if token.text.upper() == "INCORPORATED":
             str = "INCORPORATED"
             break
+        
         if token.text.upper() == "COOPERATIVE":
             str = "COOPERATIVE"
             break
+        
         if token.text.upper() == "DOMESTIC":
             str = "DOMESTIC"
             break
+        
         if token.text.upper() == "REGISTERED":
             str = "REGISTERED"
             break
+        
         if token.text.upper() == "UNREGISTERED":
             str = "UNREGISTERED"
             break
 
     
-    if amount and amount < 10000:
-        return ["customer's name", "customer's residential address", "customer's date of birth",
-                "any other name that the customer is known by", "customer's country(ies) of citizenship",
-                "customer's country(ies) of residence", "requesting PAN number" ,"customer's occupation or business activities",
-                "nature of the customer's business with the reporting entity", "income or assets available to the customer",
-                "customer's source of funds including the origin of funds", "customer's financial position",
-                "beneficial ownership of the funds used by the customer with respect to the designated services",
-                "beneficiaries of the transactions being facilitated by the reporting entity on behalf of the customer including the destination of funds"]
-    elif amount and amount >= 10000:
-        return ["customer’s name", "residential address", 
-                "source of funds including the origin of funds",
-                "occupation or business activities and purpose of transaction", "the customer’s country(ies) of citizenship",
-                "the customer’s country(ies) of residence must be disclosed"]
+    if amount and amount < 10000 and is_person:
+        return (["full_cust_names", "residential_address", "country_of_citizenship",
+                "customer_of_residence","occ_business_act", "purpose_of_transaction", 
+                "source_of_funds"], name)
+        
+    elif amount and amount >= 10000 and is_person:
+        return (["full_cust_names", "residential_address", "source_of_funds",
+                "occ_business_act", "purpose_of_transaction", "country_of_citizenship",
+                "country_of_residence"], name)
+    
     elif str == "RECURRING":
-        return [ "justifiable documents from the sending and receiving ends", 
-                "along with the source of funds and the latest bank statement must be disclosed"]
+        return (["occ_business_act", "purpose_of_transaction", "source_of_funds"], name)
+    
     elif str == "TRADER":
-         return ["the full name as registered in ASIC",
-                 "address of the company", "principal place of operation", 
-                 "nature of business by the company and type of company (proprietary or public) must be disclosed"]
+         return (["full_cust_names",
+                 "address_of_company", "principal_place_of_operation", 
+                 "nature_of_business_by_the_company_and_type_of_company"], name)
+                 
     elif str == "TRUST":
-        return ["full name of the trust", "the type of trust", "country of establishment",
-                "and information if any of the trustees is an individual or a company must be disclosed"]
+        return (["full_cust_names", "type_of_trust", "country_of_establishment",
+                "any_trustee_is_individual_or_company"], name)
+                 
     elif str == "INCORPORATED":
-        return ["the full name of the association", "full address of the head office",
-                "unique identification number", "the State, Territory", "or Country in which the association was incorporated", 
-                "the date upon which the association was incorporated", "the full name of the chairman",
-                "and the objects of the association must be disclosed"]
+        return (["full_cust_names", "full_address_of_the_head_office",
+                "unique_identification_number", "State_Country_Territory_of_incorporation", 
+                "date_of_incorporation", "name_of_chairman", "objects_of_entity"], name)
+    
     elif str == "COOPERATIVE":
-        return ["the full name of the cooperative", "full address of the head office", 
-                "unique identification number", "the State, Territory", "or Country in which the cooperative was incorporated",
-                "the date upon which the cooperative was incorporated", "the full name of the chairman",
-                "and the objects of the cooperative must be disclosed"]
+        return (["full_cust_names", "full_address_of_the_head_office", 
+                "unique identification number", "State_Country_Territory_of_incorporation",
+                "date_of_incorporation", "name_of_chairman", "objects_of_entity"], name)
+    
     elif str == "DOMESTIC":
-        return ["the full name of the company",
-                "and the information of the company being in an official list of a domestic stock exchange must be disclosed"]
+        return (["full_cust_names", "info_in_domestic_exchange"], name)
+    
     elif str == "REGISTERED":
-        return ["the full name of the company", "the information of the company being in an official list of a domestic stock exchange",
-                "and the information of the company whose shares", "in whole or in part", 
-                "are listed for quotation in the official list of any stock or equivalent exchange must be disclosed"]
+        return (["full_cust_names", "info_in_domestic_exchange", "info_in_official_exchange"], name)
+    
     elif str == "UNREGISTERED":
-        return ["the information of the company whose shares", "in whole or in part",
-                "are listed for quotation in the official list of any stock or equivalent exchange disclosed"]
+        return (["info_in_official_exchange"], name)
+    
+    else :
+        return(["full_cust_names", "country_of_establishment", "occ_business_act", "purpose_of_transaction", "source_of_funds"], name)
