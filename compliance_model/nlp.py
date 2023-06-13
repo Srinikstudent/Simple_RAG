@@ -7,11 +7,11 @@ def extract_rules(text):
 
     str = ""
     name = ""
+    geographic_loc = ""
     is_person = False
     amount = None
     
     for token in doc.ents:
-        print(token.text)
         
         if token.label_ == "PERSON":
             name = token.text
@@ -19,6 +19,10 @@ def extract_rules(text):
             
         if token.label_ == "ORG":
             name = token.text
+            
+        if token.label_ == "GPE":
+            geographic_loc = token.text
+            print(geographic_loc)
         
         if token.label_ == "MONEY":
             amount = float(token.text.replace(",", ""))
