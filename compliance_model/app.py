@@ -126,7 +126,7 @@ cust_data = {
     }
 }
 
-
+# function to check if prediction is 1 or 0
 def is_value_present(memmap, value):
   for i in range(memmap.shape[0]):
     if memmap[i] == value:
@@ -177,11 +177,19 @@ def webhook():
                      'nature_of_business_by_the_company',
                      'any_trustee_is_individual_or_company']
 
+    # convert tuple-data into dictionaries
+    data_dict = []
+    for vals in data:
+        val = {}
+        for col, value in zip(columns, vals):
+            val[col] = value
+        data_dict.append(val)
+        
     nlp_output = []
     target_name = ""
-    for vals in data:
-        if vals[5] == int(target_id):
-            compliance_input = vals[6]
+    for vals in data_dict:
+        if vals['id'] == int(target_id):
+            compliance_input = vals['rules']
             output = nlp.extract_rules(compliance_input)
             nlp_output = output[0]
             target_name = output[1]
@@ -192,7 +200,7 @@ def webhook():
                 if col not in nlp_output:
                     df[col] = 'NA'
 
-                    # drop the unnecessary columns
+            # drop the unnecessary columns
             df.drop(columns=['unique_identification_number',
             'VALUE OF TRANSACTION', 'CUSTOMER TYPE', 'CUSTOMER ACTIVITY'], axis=1, inplace=True)
 
@@ -204,7 +212,7 @@ def webhook():
             df = df.reindex(columns=feature_names)
 
             # map to label encoded values
-            with open(f'C:\\Users\\chand\\Downloads\\Compliance Model\\label_encoders.joblib', 'rb') as file:
+            with open(f'/home/lab/compliance/compliance_model/models/label_encoders.joblib', 'rb') as file:
                 le = joblib.load(file)
             for column in df.columns:
                 df[column] = df[column].map(
@@ -214,7 +222,8 @@ def webhook():
                 df[column] = le[column].transform(df[column])
 
             # predict
-            model = joblib.load(                    "C:\\Users\\chand\Downloads\\Compliance Model\\compliance_le.sav", 'r')
+            with open(f'/home/lab/compliance/compliance_model/models/compliance_le.sav', 'rb') as model_file:
+                model = joblib.load(model_file)
             x = model.predict(df)
 
             # reconfigure the output
